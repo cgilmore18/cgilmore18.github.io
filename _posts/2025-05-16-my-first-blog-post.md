@@ -10,7 +10,7 @@ I earned my bachelor's in computer science and professional writing at an engine
 
 ## What is *First Draft Thoughts*?
 
-A previous manager of mine preached the importance of sharing *first draft thoughts*--being okay with sharing content early and often. While it's a simple practice to understand, sharing half-baked ideas can feel intimidating. Sometimes, you want to reach perfection on the first try, but that just isn't realistic or sustainable. Writing help documentation and similar content is, through and through, an ever-changing, iterative process--and one to be embraced. To keep things moving efficiently, we must accept that change is inevitable (especially in tech). It's best to keep up with changes, lean into them with confidence, and create solutions that lead to better experiences.
+A previous (and incredible) manager of mine preached the importance of sharing *first draft thoughts*--being okay with sharing content early and often. While it's a simple practice to understand, sharing half-baked ideas can feel intimidating. Sometimes, you want to reach perfection on the first try, but that just isn't realistic or sustainable. Writing help documentation and similar content is, through and through, an ever-changing, iterative process--and one to be embraced. To keep things moving efficiently, we must accept that change is inevitable (especially in tech). It's best to keep up with changes, lean into them with confidence, and create solutions that lead to better experiences.
 
 If you are passionate about content strategy or adopting writing processes that drive efficency and quality, this blog is for you.  
 
