@@ -1,4 +1,4 @@
-## My first blog post on *First Draft Thoughts*
+## First blog post on *First Draft Thoughts*!
 
 Welcome to *First Draft Thoughts*! I've been thinking about making this blog for a while now---and what better time than the present? That's actually what this blog is all about: embracing the iterative nature of content. I'll be providing my first draft thoughts on topics including (but not limited to) technical writing, API documentation, content strategy, writing processes, efficient workflows, and AI.
 
