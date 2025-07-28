@@ -1,4 +1,4 @@
-# The power of rhythm
+# The power of rhythm in writing
 
 ---
 
