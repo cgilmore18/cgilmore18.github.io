@@ -1,0 +1,13 @@
+<nav class="sidebar">
+  <!-- Callout box for fun personality -->
+  <div class="quote-block">
+    <blockquote>✍️ “A little creativity every day keeps the writer’s block away.”</blockquote>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    {% for post in site.posts %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

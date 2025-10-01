@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | First Draft Thoughts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <!-- Header on “paper” -->
+    <header class="site-header">
+    <h1 class="playful-title" id="animated-title"></h1>
+    </header>
+
+    <nav class="top-nav">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+
+
+        <li><a href="https://www.linkedin.com/in/carleygilmore" target="_blank">LinkedIn</a></li>
+    </ul>
+    </nav>
+
+    <div class="container">
+      {% include nav.html %}
+
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
+
+    {% include footer.html %}
+  </div>
+
+<script>
+const titleEl = document.getElementById('animated-title');
+
+const preErrorText = "First Draft Though"; // text before error
+const errorText = "st"; // typed black first
+const correctionText = "ts :')"; // typed after strike-through
+
+// Helper function for randomized typing interval
+function randomDelay(base = 80, variance = 50) {
+  return base + Math.floor(Math.random() * variance);
+}
+
+let i = 0;
+
+// Type normal letters one by one
+function typeNormal(text, callback) {
+  if (i < text.length) {
+    titleEl.innerHTML += text[i];
+    i++;
+    setTimeout(() => typeNormal(text, callback), randomDelay());
+  } else {
+    callback();
+  }
+}
+
+// Type error letters inline first
+function typeError(error, correction) {
+  const errorSpan = document.createElement('span');
+  errorSpan.className = 'error';
+  errorSpan.textContent = '';
+  titleEl.appendChild(errorSpan);
+
+  let j = 0;
+
+  function typeOriginal() {
+    if (j < error.length) {
+      errorSpan.textContent += error[j];
+      j++;
+      setTimeout(typeOriginal, randomDelay());
+    } else {
+      // Wait a bit, then strike through
+      setTimeout(() => typeCorrection(errorSpan, correction), 300);
+    }
+  }
+
+  typeOriginal();
+}
+
+// Type corrected letters after strike
+function typeCorrection(errorSpan, correction) {
+  // Trigger straight CSS strike-through
+  errorSpan.classList.add('error-strike');
+
+  let k = 0;
+  function typeCorrect() {
+    if (k < correction.length) {
+      titleEl.appendChild(document.createTextNode(correction[k]));
+      k++;
+      setTimeout(typeCorrect, randomDelay());
+    }
+  }
+  typeCorrect();
+}
+
+// Start typing animation
+typeNormal(preErrorText, () => {
+  typeError(errorText, correctionText);
+});
+</script>
+
+</body>
+</html>
