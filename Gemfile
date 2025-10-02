@@ -2,6 +2,9 @@
 
 source "https://rubygems.org"
 
+gem "jekyll"      # or whichever version you want
+gem "jekyll-sitemap"         # optional, for sitemap generation
+
 gem "github-pages", group: :jekyll_plugins
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
@@ -11,6 +14,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # Optional but recommended plugins (many are enabled by GitHub Pages already)
 gem "jekyll-feed"      # generates an Atom feed of your posts
 gem "jekyll-seo-tag"   # adds SEO metadata to your site
-gem "jekyll-sitemap"   # generates sitemap.xml for search engines
 gem "jekyll-paginate"  # enables pagination for blog indexes
-gem "jekyll"

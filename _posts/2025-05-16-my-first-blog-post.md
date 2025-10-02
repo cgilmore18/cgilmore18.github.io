@@ -4,7 +4,7 @@ Welcome to *First Draft Thoughts*! I've been thinking about making this blog for
 
 ---
 
-## A Little About Me
+## A little about me
 
 I earned my bachelor's in computer science and professional writing at an engineering school, and I've been working as a technical writer at a software company for nearly two years. I'm passionate about working cross-functionally to support developers and staying up-to-date on industry trends to elevate the content I create. 
 

@@ -14,6 +14,12 @@ body, html {
   flex-direction: column;
 }
 
+@media (min-width:1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
 /* ==========================
    Header / Typewriter Title
 ========================== */
@@ -33,6 +39,12 @@ body, html {
   display: inline-block;
   color: #000;
   position: relative;
+}
+
+@media (min-width:768px) {
+    .playful-title {
+        font-size: 4rem;
+    }
 }
 
 /* Blinking caret */
@@ -155,6 +167,22 @@ body, html {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0dcd5;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0.5rem;
+  }
+}
+
+
 .sidebar .logo img {
   max-width: 100%;
   margin-bottom: 1.5rem;
@@ -189,9 +217,17 @@ body, html {
   padding: 2rem 2rem;
 }
 
+@media (min-width: 1024px) {
+  .content {
+    padding: 1.5rem 1rem;
+  }
+}
+
 /* Featured post card */
+/* Default: stack for mobile */
 .featured-post-card {
   display: flex;
+  flex-direction: column; /* stack by default */
   background-color: #fffdf8;
   border-left: 4px solid #e63946;
   border-radius: 8px;
@@ -201,13 +237,27 @@ body, html {
 }
 
 .featured-post-card img {
-  width: 35%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .featured-post-card .card-content {
   padding: 1.5rem;
 }
+
+/* Larger screens: side-by-side */
+@media (min-width: 769px) {
+  .featured-post-card {
+    flex-direction: row;
+  }
+
+  .featured-post-card img {
+    width: 35%;
+    height: auto;
+  }
+}
+
 
 /* Post list cards */
 .post-list-cards {
@@ -295,6 +345,14 @@ body, html {
   border-radius: 8px; /* soft corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* subtle shadow */
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .quote-block {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem;
+    font-size: 0.85rem;
+  }
 }
 
 /* Optional: italicize quote */
