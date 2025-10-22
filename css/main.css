@@ -223,6 +223,12 @@ body, html {
   }
 }
 
+@media (max-width: 480px) {
+  .content {
+    padding: 1rem;
+  }
+}
+
 /* Featured post card */
 /* Default: stack for mobile */
 .featured-post-card {
@@ -362,3 +368,26 @@ body, html {
   line-height: 1.5;
 }
 
+/* use clamp for scaling font sizes */
+body {
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.playful-title {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+/* add universal box-sizing to prevent overflow */
+* {
+  box-sizing: border-box;
+}
+
+/* make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* for centering images */
+.center { display: block; margin-left: auto; margin-right: auto; width: 50%; }
