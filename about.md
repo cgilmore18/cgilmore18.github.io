@@ -6,7 +6,7 @@ permalink: /about/
 
 # About
 
-Welcome to _First Draft Thoughts_! This is not your average writing blog. This is a space where terrible writing is encouraged. Wait what? You read that correctly. There's plenty of room for mistakes here.
+Welcome to _First Draft Thoughts_! This is not your average writing blog. This is a space where terrible writing is encouraged. Wait, what? You read that correctly. There's plenty of room for mistakes here.
 
 > "Almost all good writing begins with terrible first efforts. You need to start somewhere." – Anne Lamott
 {: .quote-block }
